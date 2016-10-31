@@ -1,0 +1,26 @@
+<div data-bind="attr: {class:cssClass}">
+	<div data-bind="attr: {class:containerClass}">
+		<div data-bind="attr: {class:rowClass}">
+			<div class='ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1'>
+				<span class='ms-font-xl ms-fontColor-white'>
+          Excel List Web Part
+        </span>
+				<p class='ms-font-l ms-fontColor-white'>
+					Choose list: <br/>
+					<select data-bind="options: lists, value:selectedList" class=''></select>
+				</p>
+				<p class='ms-font-l ms-fontColor-white'>
+					Choose columns: <br/>
+					<select data-bind="options: columns, selectedOptions:selectedColumns" size="5" multiple="true"></select>
+				</p>
+				<button data-bind="attr: {class:buttonClass}, click:generateExcel">
+					<span class='ms-Button-label'>Get list items</span>
+				</button>
+        <a data-bind="attr: {class:buttonClass,href:dataHref}" target='_blank' download='listdata.csv'>
+					<span class='ms-Button-label'>Export to Excel</span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>

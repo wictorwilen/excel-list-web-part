@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "excel-list-web-part-client-side-solution",
+    "id": "493d9184-a370-4bc9-8590-2cebd8cfb4fc",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/excel-list-web-part.spapp"
+  }
+}
